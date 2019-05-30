@@ -1,3 +1,11 @@
+# Change Point from Original
+
+**Tried to be available on iOS 8 and 9**.
+⚠️ However, the TapTic Engine can not be used with these iOS versions. It's possible to use on these versions by conditional branching with `if #available(iOS 10.0, *)`.
+
+That's all. Here are original README↓
+
+
 # SPAlert
 
 **Popup from Apple Music & Feedback in AppStore**. Contains `Done` & `Heart` presets. `Done` preset present with animation. I clone Apple's alerts as much as possible. You can find this alerts in AppStore after feedback, after added song to library in Apple Music. You can download example app [Debts - Spending tracker](https://itunes.apple.com/app/id1446635818) from AppStore.
