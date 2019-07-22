@@ -8,7 +8,7 @@ That's all. Here are original README↓
 
 # SPAlert
 
-**Popup from Apple Music & Feedback in AppStore**. Contains `Done` & `Heart` presets. `Done` preset present with animation. I clone Apple's alerts as much as possible. You can find this alerts in AppStore after feedback, after added song to library in Apple Music. You can download example app [Debts - Spending tracker](https://itunes.apple.com/app/id1446635818) from AppStore.
+**Popup from Apple Music & Feedback in AppStore**. Contains `Done` & `Heart` presets. `Done` preset present with animation. Also support Dark Mode. I clone Apple's alerts as much as possible. You can find this alerts in AppStore after feedback, after added song to library in Apple Music.
 
 <p float="left">
     <img src="https://github.com/ivanvorobei/SPAlert/blob/master/Resources/Preview-Done.gif" width="250">
@@ -16,11 +16,12 @@ That's all. Here are original README↓
     <img src="https://github.com/ivanvorobei/SPAlert/blob/master/Resources/Preview-Message.gif" width="250">
 </p>
 
-If you like the project, do not forget to `put star ★` or help me by donate:
+You can download example [Debts - Spending tracker](https://itunes.apple.com/app/id1446635818) app from AppStore.  
+For **buy source code** of app in preview, go to:
 
-[![Patron](https://github.com/ivanvorobei/SPPermission/blob/master/Resources/Patron%20Button.svg)](https://patreon.com/ivanvorobei)
+[![xcode-shop.com](https://github.com/ivanvorobei/SPPermission/blob/master/Resources/Buttons/Xcode%20Shop%20Button%20-%203.svg)](https://xcode-shop.com)
 
-See project's backers in [Sponsors](https://github.com/ivanvorobei/SPStorkController#sponsors) section.
+See project's backers in [Sponsors](https://github.com/ivanvorobei/SPAlert#sponsors) section.
 
 ## Navigate
 
@@ -29,6 +30,7 @@ See project's backers in [Sponsors](https://github.com/ivanvorobei/SPStorkContro
 - [Quick Start](#quick-start)
 - [Usage](#usage)
     - [Duration](#duration)
+    - [Dark Mode](#dark-mode)
     - [Layout](#layout)
     - [Dismiss by Tap](#dismiss-by-tap)
     - [Haptic](#haptic)   
@@ -40,8 +42,8 @@ See project's backers in [Sponsors](https://github.com/ivanvorobei/SPStorkContro
     - [SPLarkController](#splarkcontroller)
     - [SPPermission](#sppermission)
     - [Awesome iOS UI](https://github.com/ivanvorobei/awesome-ios-ui)
+    - [SwiftUI Examples](https://github.com/ivanvorobei/SwiftUI)
 - [License](#license)
-- [Contact or Order Develop](#contact)
 
 ## Requirements
 
@@ -97,6 +99,22 @@ let alertView = SPAlertView(title: "Added to Library", message: nil, preset: SPA
 alertView.duration = 3
 alertView.present()
 ```
+
+### Dark Mode
+
+<img align="left" src="https://github.com/ivanvorobei/SPAlert/blob/master/Resources/Dark-Mode-Preview.jpg" width="220">
+
+The default mode is `Dark Mode`. No additional configuration is required. As soon as the user change the interface to dark, all alerts will appear dark.
+
+For check state of user appearance I am use `traitCollection`:
+
+```swift
+if self.traitCollection.userInterfaceStyle == .dark {
+    return true
+}
+```
+
+It available since iOS 12, for early using always Light Mode. 
 
 ### Layout
 
@@ -166,7 +184,7 @@ Alert you can find in [SPAlert](https://github.com/ivanvorobei/SPAlert) project.
 
 [SPPermission](https://github.com/ivanvorobei/SPPermission) allow request permissions **with native dialog** UI and interactive animations. Also you can request permissions without dialog. Check state any permission. You can start using this project with just two lines of code and easy customisation.
 
-If your app uses `SPPermission`, write me. I am adding you app as example of usage.
+You can buy example Dialog & Dinamic animations in [xcode-shop.com](https://xcode-shop.com/ui-elements), see [preview](https://xcode-shop.com/assets/preview/dinamic-alert.mov).
 
 ---
 
@@ -178,10 +196,6 @@ If your app uses `SPPermission`, write me. I am adding you app as example of usa
 
 You can download example app [Code - Learn Swift & Design](https://itunes.apple.com/app/id1453325619) from AppStore. If you want to **buy source code** of app this app, please, go to [xcode-shop.com](https://xcode-shop.com).
 
----
-
 ## License
-`SPAlert` is released under the MIT license. Check `LICENSE.md` for details.
 
-## Contact
-If you need any application or UI to be developed, message me at hello@ivanvorobei.by or via [telegram](https://t.me/ivanvorobei). I develop iOS apps and designs. I use `swift` for development. To request more functionality, you should create a new issue. You can see my [apps in AppStore](https://itunes.apple.com/developer/id1446635817).
+`SPAlert` is released under the MIT license. Check `LICENSE.md` for details.
